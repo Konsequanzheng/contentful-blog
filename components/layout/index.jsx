@@ -27,7 +27,8 @@ const Layout = ({ children }) => {
             </header>
 
             <main className='container p-8'>{children}</main>
-            <footer className='bg-stone-100 text-sm font-medium uppercase text-stone-400'>
+
+            <footer className='bg-stone-100 text-sm font-medium uppercase text-stone-400 px-8 py-4'>
                 <div className='container'>
                     <p>Footer</p>
                 </div>
@@ -35,3 +36,5 @@ const Layout = ({ children }) => {
         </>
     )
 }
+
+export default Layout
