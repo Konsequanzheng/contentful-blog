@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import Avatar from '../ui/Avatar'
 import DateComponent from '../ui/DateComponent'
-import ContentfulImage from '../ContentfulImage'
+import ContentfulImage from '../ui/ContentfulImage'
 import { CLIENT_STATIC_FILES_RUNTIME_REACT_REFRESH } from 'next/dist/shared/lib/constants'
 
 const PostCard = ({ post }) => {
