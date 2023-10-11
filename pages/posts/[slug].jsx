@@ -1,6 +1,6 @@
 import PostBody from '@/components/posts/PostBody'
 import PostHeader from '@/components/posts/PostHeader'
-import PreviewAlert from '@/components/ui/PreviewAlert'
+// import PreviewAlert from '@/components/ui/PreviewAlert'
 import Skeleton from '@/components/ui/Skeleton'
 import { client, previewClient } from '@/lib/contentful/client'
 import { useRouter } from 'next/router'
@@ -10,7 +10,7 @@ const Post = ({ post, preview }) => {
 
   return (
     <section className='section'>
-      [preview && <PreviewAlert />]
+      {/* [preview && <PreviewAlert />] */}
       <div className='container'>
         <article className='prose mx-auto'>
           {router.isFallback ? (
@@ -59,6 +59,11 @@ export const getStaticPaths = async () => {
   const paths = response.items.map(item => ({
     params: { slug: item.fields.slug }
   }))
+
+  return {
+    paths,
+    fallback: true
+  }
 }
 
 export default Post
