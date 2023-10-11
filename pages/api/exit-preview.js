@@ -1,6 +1,6 @@
 const handler = async (_, res) => {
   res.clearPreviewData()
-  res.writeHeadf(307, { Location: '/' })
+  res.writeHead(307, { Location: '/' })
   res.end()
 }
 

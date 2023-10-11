@@ -10,7 +10,7 @@ const Post = ({ post, preview }) => {
 
   return (
     <section className='section'>
-      [preview && <PreviewAlert />]
+      {preview && <PreviewAlert />}
       <div className='container'>
         <article className='prose mx-auto'>
           {router.isFallback ? (
